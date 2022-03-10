@@ -3,8 +3,247 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
-
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+}
+
+.container{
+
+ width: 100%;
+ max-height: 80%; 
+background:  linear-gradient( #1c5380, #1c5380 240px,white 20px, white 40px) no-repeat ; 
+ display: flex;
+ flex-direction: column;
+ justify-content:flex-start;
+ border:10%
+}
+.main-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+.phone{
+  width: 35%;
+  height: 60%;
+  margin-right: 5%;
+  
+  
+}
+div.information{
+  width: 60%;
+  height: 60%;
+  display: flex ;
+  flex-direction: column;
+  
+}
+div.logo-button{
+  display: flex ;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+img.logo {
+  width: 60%;
+  
+}
+button.log-in{
+  
+  width: 20%;
+  border:  #06365f solid 0.5px; 
+  margin-top: 3.5%;
+  padding: 1.5%;
+  background: linear-gradient(#6788a3 35%,#1c5380 );
+  border-radius: 2px; 
+  color: rgb(206, 202, 202);
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#home-log-in{
+  width: 25%;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 4%;
+  padding-left: 7%;
+  padding-top: 3.5%;
+  padding-right: 7%;
+  box-shadow: 3px -1px 0px -2px rgba(187, 187, 186, 0.99),-3px -1px 2px -2px rgba(187, 187, 186, 1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+              -23px 0 20px -23px rgba(0, 0, 0, .8),
+              23px 0 20px -23px rgba(0, 0, 0, .8),
+              inset 0 0 40px rgba(0, 0, 0, .1);
+}
+.text-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+h1{
+  color: #06365f;
+  font-size: large;
+  line-height: 130%;
+  padding-right: 40%;
+  padding-bottom: 3%;
+}
+p{
+  font-size: smaller;
+  padding-bottom: 2%;
+  line-height: 140%;
+}
+.highlighted{
+  font-weight: bold ;
+}
+.images-app-store{
+  display: flex;
+  align-items: flex-end;
+  margin-top: 4%;
+  
+}
+
+.iphone-app{
+  width: 35%;
+  padding-right: 5%;
+}
+.android-app{
+  width: 35%;
+}
+.footer>ul{
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+  justify-content:space-evenly ;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 5%;
+ 
+  
+  }
+.footer-info{
+
+  text-decoration: none;
+  font-size: x-small;
+  color: #1c5380;
+  font-weight: bold;
+}
+#copyright{
+
+  font-size: x-small;
+  margin-bottom: 2.5px;
+  padding-left: 2%;
+
+
+
+}
+
+@media only screen and (max-width:414px){
+  .container{
+
+    width: 100%;
+    max-height: 80%; 
+   background:  linear-gradient( #1c5380, #1c5380 240px,white 20px, white 40px) no-repeat ; 
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    border:10%
+   }  
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
+
+.phone{
+  order: 1;
+  width: 35%;
+  height: 60%;
+  padding-top: 5%;
+
+}
+
+div.information{
+  width: 60%;
+  height: 60%;
+  display: flex ;
+  flex-direction: column;
+  
+}
+div.logo-button{
+  display: flex ;
+  justify-content: space-between;
+  
+}
+img.logo {
+  width: 60%;
+  
+}
+button.log-in{
+  
+  width: 32%;
+  border:  #06365f solid 0.5px; 
+  
+  
+  background: linear-gradient(#6788a3 35%,#1c5380 );
+  border-radius: 2px; 
+  color: rgb(206, 202, 202);
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ 
+
+ 
+ .images-app-store{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 4%;
+   
+ }
+ 
+ 
+ .footer>ul{
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   justify-content:space-around ;
+   padding-left: 20%;
+   padding-right: 20%;
+   margin-bottom: 5%;
+  
+   
+   }
+ .footer-info{
+ 
+   text-decoration: none;
+   font-size: x-small;
+   color: #1c5380;
+   font-weight: bold;
+ }
+ #copyright{
+ 
+   font-size: x-small;
+   margin-bottom: 2.5px;
+   padding-left: 2%;
+ 
+}
+
 }
